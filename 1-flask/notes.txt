@@ -1,0 +1,39 @@
+create virtual environment (named venv)
+python -m venv venv
+
+cd into the venv environment
+cd venv
+
+activate the virtual environment:
+  cd into Scripts folder
+cd Scripts
+activate
+
+install flask
+pip install flask
+
+want to review list of packages?
+pip list
+
+creating files
+  create a demo python file
+touch demo.py
+
+mkdir program
+cd program
+touch __init__.py
+touch routes.py
+
+edit our __init__.py file
+vi __init__.py
+
+define environment variable
+set FLASK_APP=demo.py
+
+long term env variables
+pip install python-dotenv
+vi .flaskenv
+FLASK_APP=demo.py
+ 
+To start flask
+flask run
